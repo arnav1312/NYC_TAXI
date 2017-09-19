@@ -6,4 +6,4 @@ I would be posting my findings periodically!
 
 * ## Accuracy of the Model:
 
-  ![](Screenshots/Accuracy.png "Model Accuracy")
+ ![](Screenshots/Accuracy.png "Model Accuracy")
