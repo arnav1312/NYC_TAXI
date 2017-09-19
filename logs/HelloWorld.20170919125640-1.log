@@ -1,0 +1,56 @@
+2017-09-19 12:56:40,996 - teradata.udaexec - INFO - Initializing UdaExec...
+2017-09-19 12:56:40,996 - teradata.udaexec - INFO - Reading config files: ['/etc/udaexec.ini: Not Found', '/Users/as186194/udaexec.ini: Not Found', '/Users/as186194/Documents/GitHub/NYC_TAXI/udaexec.ini: Not Found']
+2017-09-19 12:56:40,996 - teradata.udaexec - INFO - No previous run number found as /Users/as186194/Documents/GitHub/NYC_TAXI/.runNumber does not exist. Initializing run number to 1
+2017-09-19 12:56:40,996 - teradata.udaexec - INFO - Cleaning up log files older than 90 days.
+2017-09-19 12:56:40,996 - teradata.udaexec - INFO - Removed 0 log files.
+2017-09-19 12:56:41,035 - teradata.udaexec - INFO - Checkpoint file not found: /Users/as186194/Documents/GitHub/NYC_TAXI/HelloWorld.checkpoint
+2017-09-19 12:56:41,035 - teradata.udaexec - INFO - No previous checkpoint found, executing from beginning...
+2017-09-19 12:56:41,035 - teradata.udaexec - INFO - Execution Details:
+/********************************************************************************
+ * Application Name: HelloWorld
+ *          Version: 1.0
+ *       Run Number: 20170919125640-1
+ *             Host: MINAS186194-832
+ *         Platform: Darwin-16.7.0-x86_64-i386-64bit
+ *          OS User: as186194
+ *   Python Version: 3.6.1
+ *  Python Compiler: GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)
+ *     Python Build: ('default', 'May 11 2017 13:04:09')
+ *  UdaExec Version: 15.10.0.21
+ *     Program Name: 
+ *      Working Dir: /Users/as186194/Documents/GitHub/NYC_TAXI
+ *      Git Version: git version 2.11.0 (Apple Git-81)
+ *     Git Revision: ff94a10
+ *        Git Dirty: True [ M README.md,?? .runNumber,?? logs/]
+ *          Log Dir: /Users/as186194/Documents/GitHub/NYC_TAXI/logs
+ *         Log File: /Users/as186194/Documents/GitHub/NYC_TAXI/logs/HelloWorld.20170919125640-1.log
+ *     Config Files: ['/etc/udaexec.ini: Not Found', '/Users/as186194/udaexec.ini: Not Found', '/Users/as186194/Documents/GitHub/NYC_TAXI/udaexec.ini: Not Found']
+ *      Query Bands: ApplicationName=HelloWorld;Version=1.0;JobID=20170919125640-1;ClientUser=as186194;Production=False;udaAppLogFile=/Users/as186194/Documents/GitHub/NYC_TAXI/logs/HelloWorld.20170919125640-1.log;gitRevision=ff94a10;gitDirty=True;UtilityName=PyTd;UtilityVersion=15.10.0.21
+********************************************************************************/
+2017-09-19 12:56:41,044 - teradata.udaexec - INFO - Creating connection: {'method': 'odbc', 'system': 'tdprod', 'username': 'xxx', 'password': 'XXXXXX'}
+2017-09-19 12:56:41,044 - teradata.tdodbc - INFO - Loading ODBC Library: libiodbc.dylib
+2017-09-19 12:56:41,085 - teradata.tdodbc - INFO - Available drivers: 
+2017-09-19 12:56:41,085 - teradata.udaexec - ERROR - Unable to create connection: {'method': 'odbc', 'system': 'tdprod', 'username': 'xxx', 'password': 'XXXXXX'}
+Traceback (most recent call last):
+  File "/anaconda/lib/python3.6/site-packages/teradata/udaexec.py", line 183, in connect
+    **args))
+  File "/anaconda/lib/python3.6/site-packages/teradata/tdodbc.py", line 427, in __init__
+    connectParams["DRIVER"] = determineDriver(dbType, driver)
+  File "/anaconda/lib/python3.6/site-packages/teradata/tdodbc.py", line 391, in determineDriver
+    "Available drivers: {}".format(dbType, ",".join(drivers)))
+teradata.api.InterfaceError: ('DRIVER_NOT_FOUND', "No driver found for 'Teradata'.  Available drivers: ")
+2017-09-19 12:56:41,088 - teradata.udaexec - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+  File "/anaconda/lib/python3.6/site-packages/teradata/udaexec.py", line 183, in connect
+    **args))
+  File "/anaconda/lib/python3.6/site-packages/teradata/tdodbc.py", line 427, in __init__
+    connectParams["DRIVER"] = determineDriver(dbType, driver)
+  File "/anaconda/lib/python3.6/site-packages/teradata/tdodbc.py", line 391, in determineDriver
+    "Available drivers: {}".format(dbType, ",".join(drivers)))
+teradata.api.InterfaceError: ('DRIVER_NOT_FOUND', "No driver found for 'Teradata'.  Available drivers: ")
+2017-09-19 12:56:43,981 - teradata.udaexec - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+NameError: name 'session' is not defined
+2017-09-19 12:57:29,226 - teradata.udaexec - INFO - UdaExec exiting.
