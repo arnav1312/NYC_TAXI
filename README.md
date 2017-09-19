@@ -5,4 +5,5 @@ This is a repository built for the analysis of the Kaggle competition called NYC
 I would be posting my findings periodically!
 
 * ## Accuracy of the Model:
-![](screenshots/Accuracy.png "Model Accuracy")
+
+  ![](Screenshots/Accuracy.png "Model Accuracy")
